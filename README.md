@@ -10,15 +10,15 @@ For customizing the provisioning use the terraform.tfvars file.
 	
 ## Parameters
 
-region = "aws region for provisioning K8 cluster"
-availability_zone = "availability zone for provisioning cluster"
-k8_vpc_cidr_block = "vpc CIDR block"
-k8_subnet_cidr_block = "K8 subnet cidr block"
-instance_type = "K8 master and node instance type"
-ami = "ami id to use for creating node, ubuntu based ami"
-key = "ssh key for accessing ec2 instances"
-k8_nodes = "number of K8 slave nodes"
-k8_token = "k8 token for joining nodes to cluster"	
+region = "aws region for provisioning K8 cluster"  
+availability_zone = "availability zone for provisioning cluster"  
+k8_vpc_cidr_block = "vpc CIDR block"  
+k8_subnet_cidr_block = "K8 subnet cidr block"  
+instance_type = "K8 master and node instance type"  
+ami = "ami id to use for creating node, ubuntu based ami"  
+key = "ssh key for accessing ec2 instances" 
+k8_nodes = "number of K8 slave nodes" 
+k8_token = "k8 token for joining nodes to cluster" 	
    
 ## How to run
 ```
