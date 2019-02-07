@@ -21,7 +21,10 @@ k8_nodes = "number of K8 slave nodes"
 k8_token = "k8 token for joining nodes to cluster" 
   
   
-## How to run  
+## How to run
+  
+Before running the teraform script make sure all parameters are configured appropriately.  
+
 ```
 clone project
 export AWS access key and AWS secret key
