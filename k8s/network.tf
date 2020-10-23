@@ -2,7 +2,7 @@ resource "aws_vpc" "this" {
   cidr_block = var.vpc_cidr
 
   tags = {
-    Name = "K8s-VPC"
+    Name = "k8s-vpc"
   }
 }
 
@@ -15,7 +15,7 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name = "public-subnet"
+    Name = "public-subnet-${count.index}"
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_internet_gateway" "this" {
   vpc_id = aws_vpc.this.id
 
   tags = {
-    Name = "K8s-VPC-IGW"
+    Name = "k8s-vpc-igw"
   }
 }
 

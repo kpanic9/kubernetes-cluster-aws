@@ -29,12 +29,6 @@ variable "ami" {
   default = "ami-0427e8367e3770df1"
 }
 
-# ssh key for accessing ec2 instances
-variable "key" {
-  type    = string
-  default = "caneda"
-}
-
 # number of K8 slave nodes
 variable "worker_nodes" {
   type    = string
